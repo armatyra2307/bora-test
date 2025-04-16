@@ -3,18 +3,18 @@ import { Product } from '../types';
 export const products: Product[] = [
   {
     id: 1,
-    name: "Классическая керамическая раковина",
-    price: 5990,
+    name: "Garnet Basim Mixer",
+    price: 3790,
     description: "Элегантная классическая раковина из высококачественной керамики. Идеально подходит для традиционных интерьеров ванных комнат.",
     category: "sink",
-    imageUrl: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    imageUrl: "/images/Garnet/Garnet Basin Black Rassan.jpg",
     images: [
-      "https://images.unsplash.com/photo-1620626011761-996317b8d101?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1584622781867-bc4ba9a27856?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+      "/images/Garnet/Garnet Basin Chrome Rassan.jpg",
+      "/images/Garnet/Garnet Basin Gold Rassan.jpg",
+      "/images/Garnet/Garnet Basin Black Rosegold Rassan.jpg"
     ],
     features: [
-      "Высококачественная керамика",
+      "Высококачественная латунь",
       "Устойчивое к царапинам покрытие",
       "Легкая очистка",
       "Классический дизайн"
@@ -22,7 +22,7 @@ export const products: Product[] = [
     inStock: true,
     rating: 4.7,
     reviews: 124,
-    material: "Керамика",
+    material: "Латунь",
     style: "Классический",
     dimensions: {
       width: 60,
@@ -30,30 +30,29 @@ export const products: Product[] = [
       height: 20
     },
     specifications: {
-      "Назначение": "для ванной комнаты",
-      "Монтаж": "настенный, накладной",
-      "Форма": "прямоугольная",
-      "Материал": "керамика",
-      "Цвет": "белый",
-      "Страна": "Италия",
+      "Назначение": "смеситель",
+      "Монтаж": "горизонтальный",
+      "Управление": "рычажное",
+      "Материал": "Латунь",
+      "Цвет": "Черный, розовое, золото",
+      "Страна": "Иран",
       "Гарантия": "5 лет",
-      "Перелив": "есть",
+      "Форма излива": "не поворотный",
       "Отверстие под смеситель": "1 отверстие",
-      "Способ монтажа": "на столешницу или подвесной",
-      "Стилистика дизайна": "классический",
-      "Донный клапан": "в комплекте"
+      "Донный клапан": "нет"
     }
   },
   {
     id: 2,
-    name: "Современная подвесная раковина",
-    price: 7490,
+    name: "Garnet Bath mixer",
+    price: 4210,
     description: "Минималистичная подвесная раковина для современных интерьеров. Экономит пространство и создает ощущение легкости в ванной комнате.",
     category: "sink",
-    imageUrl: "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    imageUrl: "/images/Garnet/Garnet Bath Black Rassan.jpg",
     images: [
-      "https://images.unsplash.com/photo-1620626011761-996317b8d101?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+      "/images/Garnet/Garnet Bath Black Rosegold Rassan.jpg",
+      "/images/Garnet/Garnet Bath Chrome Rassan.jpg",
+      "/images/Garnet/Garnet Bath Gold Rassan.jpg"
     ],
     features: [
       "Настенный монтаж",
@@ -64,7 +63,6 @@ export const products: Product[] = [
     inStock: true,
     rating: 4.5,
     reviews: 89,
-    new: true,
     material: "Искусственный камень",
     style: "Современный",
     dimensions: {
@@ -73,30 +71,29 @@ export const products: Product[] = [
       height: 15
     },
     specifications: {
-      "Назначение": "для ванной комнаты",
-      "Монтаж": "подвесной",
-      "Форма": "овальная",
-      "Материал": "искусственный камень",
-      "Цвет": "белый",
-      "Страна": "Германия",
-      "Гарантия": "10 лет",
-      "Перелив": "скрытый",
-      "Отверстие под смеситель": "без отверстия",
-      "Способ монтажа": "настенный",
-      "Стилистика дизайна": "современный",
-      "Донный клапан": "в комплекте"
+      "Назначение": "смеситель",
+      "Монтаж": "вертикальный",
+      "Управление": "рычажное",
+      "Материал": "Латунь",
+      "Цвет": "Черный, розовое, золото",
+      "Страна": "Иран",
+      "Гарантия": "5 лет",
+      "Форма излива": "не поворотный",
+      "Отверстие под смеситель": "1 отверстие",
+      "Донный клапан": "нет"
     }
   },
   {
     id: 3,
-    name: "Двойная раковина для пары",
+    name: "Garnet Shower mixer",
     price: 12990,
     description: "Просторная двойная раковина для семейных ванных комнат. Позволяет двум людям комфортно пользоваться ванной одновременно.",
     category: "sink",
-    imageUrl: "https://images.unsplash.com/photo-1613849925594-415a32298f54?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    imageUrl: "/images/Garnet/Garnet Shower Black Rassan.jpg",
     images: [
-      "https://images.unsplash.com/photo-1620626011761-996317b8d101?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+      "/images/Garnet/Garnet Shower Black Rosegold Rassan.jpg",
+      "/images/Garnet/Garnet Shower Chrome Rassan.jpg",
+      "/images/Garnet/Garnet Shower Gold Rassan.jpg"
     ],
     features: [
       "Двойная чаша",
@@ -104,7 +101,7 @@ export const products: Product[] = [
       "Прочная конструкция",
       "Двойная система слива"
     ],
-    inStock: true,
+    inStock: false,
     rating: 4.8,
     reviews: 56,
     material: "Мрамор",
@@ -115,30 +112,29 @@ export const products: Product[] = [
       height: 20
     },
     specifications: {
-      "Назначение": "для ванной комнаты",
-      "Монтаж": "встраиваемый",
-      "Форма": "прямоугольная",
-      "Материал": "мрамор",
-      "Цвет": "бежевый",
-      "Страна": "Италия",
-      "Гарантия": "15 лет",
-      "Перелив": "есть",
-      "Отверстие под смеситель": "2 отверстия",
-      "Способ монтажа": "встраиваемый",
-      "Стилистика дизайна": "современный",
-      "Донный клапан": "в комплекте"
+      "Назначение": "смеситель",
+      "Монтаж": "вертикальный",
+      "Управление": "рычажное",
+      "Материал": "Латунь",
+      "Цвет": "Черный, розовое, золото",
+      "Страна": "Иран",
+      "Гарантия": "5 лет",
+      "Форма излива": "не поворотный",
+      "Отверстие под смеситель": "1 отверстие",
+      "Донный клапан": "нет"
     }
   },
   {
     id: 4,
-    name: "Раковина из искусственного камня",
-    price: 9990,
+    name: "Garnet Sink mixer",
+    price: 3600,
     description: "Элегантная раковина из искусственного камня с гладкой поверхностью и современным дизайном. Устойчива к пятнам и легко чистится.",
     category: "sink",
-    imageUrl: "https://images.unsplash.com/photo-1620626011761-996317b8d101?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    imageUrl: "/images/Garnet/Garnet Sink Black Rassan.jpg",
     images: [
-      "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+      "/images/Garnet/Garnet Sink Black Rosegold Rassan.jpg",
+      "/images/Garnet/Garnet Sink Chrome Rassan.jpg",
+      "i/images/Garnet/Garnet Sink Gold Rassan.jpg"
     ],
     features: [
       "Искусственный камень премиум-класса",
@@ -157,30 +153,29 @@ export const products: Product[] = [
       height: 18
     },
     specifications: {
-      "Назначение": "для ванной комнаты",
-      "Монтаж": "накладной",
-      "Форма": "круглая",
-      "Материал": "искусственный камень",
-      "Цвет": "белый",
-      "Страна": "Швейцария",
-      "Гарантия": "10 лет",
-      "Перелив": "есть",
-      "Отверстие под смеситель": "без отверстия",
-      "Способ монтажа": "накладной",
-      "Стилистика дизайна": "современный",
-      "Донный клапан": "в комплекте"
+      "Назначение": "смеситель",
+      "Монтаж": "горизонтальный",
+      "Управление": "рычажное",
+      "Материал": "Латунь",
+      "Цвет": "Черный, розовое, золото",
+      "Страна": "Иран",
+      "Гарантия": "5 лет",
+      "Форма излива": "не поворотный",
+      "Отверстие под смеситель": "1 отверстие",
+      "Донный клапан": "нет"
     }
   },
   {
     id: 5,
-    name: "Накладная раковина в стиле лофт",
-    price: 8490,
+    name: "Garnet Top Basin mixer",
+    price: 4860,
     description: "Стильная накладная раковина в индустриальном стиле. Идеально подходит для интерьеров в стиле лофт или индустриальном стиле.",
     category: "sink",
-    imageUrl: "https://images.unsplash.com/photo-1600566752355-35792bedcfea?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    imageUrl: "/images/Garnet/Garnet Top Basin Black Rassan.jpg",
     images: [
-      "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1620626011761-996317b8d101?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+      "/images/Garnet/Garnet Top Basin Black Rosegold Rassan.jpg",
+      "/images/Garnet/Garnet Top Basin Chrome Rassan.jpg",
+      "/images/Garnet/Garnet Top Basin Gold Rassan.jpg"
     ],
     features: [
       "Накладной монтаж",
@@ -188,7 +183,7 @@ export const products: Product[] = [
       "Прочная конструкция",
       "Устойчивость к высоким температурам"
     ],
-    inStock: false,
+    inStock: true,
     rating: 4.4,
     reviews: 42,
     material: "Бетон",
@@ -199,31 +194,27 @@ export const products: Product[] = [
       height: 15
     },
     specifications: {
-      "Назначение": "для ванной комнаты",
-      "Монтаж": "накладной",
-      "Форма": "квадратная",
-      "Материал": "бетон",
-      "Цвет": "серый",
-      "Страна": "Германия",
+      "Назначение": "смеситель",
+      "Монтаж": "горизонтальный",
+      "Управление": "рычажное",
+      "Материал": "Латунь",
+      "Цвет": "Черный, розовое, золото",
+      "Страна": "Иран",
       "Гарантия": "5 лет",
-      "Перелив": "нет",
-      "Отверстие под смеситель": "без отверстия",
-      "Способ монтажа": "накладной",
-      "Стилистика дизайна": "лофт",
-      "Донный клапан": "приобретается отдельно"
+      "Форма излива": "не поворотный",
+      "Отверстие под смеситель": "1 отверстие",
+      "Донный клапан": "нет"
     }
   },
   {
     id: 6,
-    name: "Dorsa Single-Lever Bath Mixer Chrome",
+    name: "Doofer Pot Filler",
     price: 4990,
     description: "Современный хромированный смеситель для ванной комнаты с однорычажным управлением. Сочетает в себе элегантный дизайн и функциональность.",
     category: "faucet",
-    imageUrl: "/images/Dorsa Single-Lever Bath Mixer Chrome/photo_6_2025-03-07_13-16-22.jpg",
+    imageUrl: "/images/Doofer/Doofer Pot Filler Chrome Rassan.jpg",
     images: [
-      "/images/Dorsa Single-Lever Bath Mixer Chrome/photo_7_2025-03-07_13-16-22.jpg",
-      "/images/Dorsa Single-Lever Bath Mixer Chrome/photo_3_2025-03-07_13-16-22.jpg",
-      "/images/Dorsa Single-Lever Bath Mixer Chrome/photo_2025-03-20_22-12-18.jpg",
+      "/images/Doofer/Doofer Pot Filler Gold Rassan.jpg",
     ],
     features: [
       "Хромированное покрытие",
@@ -231,93 +222,76 @@ export const products: Product[] = [
       "Керамический картридж",
       "Аэратор для экономии воды"
     ],
-    inStock: true,
+    inStock: false,
     rating: 4.6,
     reviews: 112,
+    new: true,
     material: "Латунь с хромированным покрытием",
     style: "Современный",
     colors: ["Хром"],
     specifications: {
-      "Назначение": "для ванны и душа",
-      "Монтаж": "вертикальный (на стену)",
-      "Встраиваемый": "да",
-      "Управление": "однорычажное",
-      "Цвет": "хром",
+      "Назначение": "смеситель",
+      "Монтаж": "вертикальный",
+      "Управление": "рычажное",
+      "Материал": "Латунь",
+      "Цвет": "хром, золото",
       "Страна": "Иран",
-      "Гарантия": "5 год",
-      "Подводка": "гибкая",
-      "Поворотный излив": "нет",
-      "Форма излива": "обычный",
-      "Стилистика дизайна": "современный",
-      "Донный клапан": "-",
-      "Механизм": "-",
-      "Материал корпуса": "латунь",
-      "Высота":"110мм",
-      "Длина":"100мм",
-      "Ширина":"180мм",
-      "Вес":"1.158кг",
+      "Гарантия": "5 лет",
+      "Форма излива": "не поворотный",
+      "Отверстие под смеситель": "1 отверстие",
+      "Донный клапан": "нет"
     }
   },
   {
     id: 7,
-    name: "Garnet Basim Mixer Black RoseGold",
-    price: 7990,
+    name: "Lona Bath Mixer",
+    price: 1929,
     description: "Элегантный смеситель в современном стиле с однорычажным механизмом. Идеально подходит для классических и новомодных интерьеров ванных комнат.",
     category: "faucet",
-    imageUrl: "/images/Garnet Basim Mixer Black RoseGold/photo_8_2025-03-07_16-50-28.jpg",
+    imageUrl: "/images/Lona Bath Mixer Chrome/photo_7_2025-03-07_16-26-30.jpg",
     images: [
-      "/images/Garnet Basim Mixer Black RoseGold/photo_9_2025-03-07_16-50-28.jpg",
-      "/images/Garnet Basim Mixer Black RoseGold/photo_12_2025-03-07_16-50-28.jpg",
-      "/images/Garnet Basim Mixer Black RoseGold/photo_8_2025-03-07_16-50-28.jpg"
+      "/images/Lona Bath Mixer Chrome/photo_8_2025-03-07_16-26-30.jpg",
     ],
     features: [
       "Однорычажное управление",
       "Современный дизайн",
-      "Высококачественный пластик",
+      "Высококачественная латунь",
     ],
     inStock: true,
     rating: 4.8,
     reviews: 67,
-    material: "Пластк с позолотой",
+    new: true,
+    material: "Латунь",
     style: "Современный",
     colors: ["Черный" , "Розовый"],
     specifications: {
-      "Назначение": "для раковины",
-      "Монтаж": "горизонтальный (на раковину)",
-      "Встраиваемый": "нет",
+      "Назначение": "смеситель",
+      "Монтаж": "вертикальный",
       "Управление": "рычажное",
-      "Цвет": "черный",
+      "Материал": "Латунь",
+      "Цвет": "хром",
       "Страна": "Иран",
-      "Гарантия": "1 год",
-      "Подводка": "гибкая",
-      "Поворотный излив": "нет",
-      "Форма излива": "-",
-      "Стилистика дизайна": "Современный",
-      "Донный клапан": "-",
-      "Механизм": "-",
-      "Материал корпуса": "Латунь",
-      "Длина":"250мм",
-      "Ширина":"120мм",
-      "Вес":"1.3кг",
+      "Гарантия": "5 лет",
+      "Форма излива": "не поворотный",
+      "Отверстие под смеситель": "1 отверстие",
+      "Донный клапан": "нет"
     }
   },
   {
     id: 8,
-    name: "Сенсорный смеситель",
-    price: 11990,
+    name: "Lona Single Basin Mixer",
+    price: 1650,
     description: "Инновационный сенсорный смеситель с автоматическим включением и выключением воды. Экономит воду и обеспечивает максимальную гигиену.",
     category: "faucet",
-    imageUrl: "/images/Sarina SinkMixer With Extractable Chrome/photo_2_2025-03-07_15-56-08.jpg",
+    imageUrl: "/images/Lona Single -Lever Basin Mixer Chrome/photo_4_2025-03-07_16-31-41.jpg",
     images: [
-      "/images/Sarina SinkMixer With Extractable Chrome/photo_1_2025-03-07_15-56-08.jpg",
-      "/images/Sarina SinkMixer With Extractable Chrome/photo_3_2025-03-07_15-56-08.jpg",
-      "/images/Sarina SinkMixer With Extractable Chrome/photo_4_2025-03-07_15-56-08.jpg"
+      "/images/Lona Single -Lever Basin Mixer Chrome/photo_6_2025-03-07_16-31-41.jpg",
+      "/images/Lona Single -Lever Basin Mixer Chrome/photo_7_2025-03-07_16-31-41.jpg",
     ],
     features: [
-      "Сенсорное управление",
-      "Автоматическое отключение",
-      "Регулировка температуры",
-      "Энергосберегающая технология"
+      "Однорычажное управление",
+      "Современный дизайн",
+      "Высококачественная латунь",
     ],
     inStock: true,
     rating: 4.5,
@@ -326,39 +300,33 @@ export const products: Product[] = [
     material: "Нержавеющая сталь",
     style: "Современный",
     specifications: {
-      "Назначение": "для раковины",
-      "Монтаж": "горизонтальный (на раковину)",
-      "Встраиваемый": "нет",
-      "Управление": "сенсорное",
+      "Назначение": "смеситель",
+      "Монтаж": "горизонтальный",
+      "Управление": "рычажное",
+      "Материал": "Латунь",
       "Цвет": "хром",
-      "Страна": "Япония",
+      "Страна": "Иран",
       "Гарантия": "5 лет",
-      "Подводка": "гибкая",
-      "Поворотный излив": "нет",
-      "Форма излива": "современный",
-      "Стилистика дизайна": "хай-тек",
-      "Донный клапан": "в комплекте",
-      "Механизм": "электронный",
-      "Материал корпуса": "нержавеющая сталь",
-      "Питание": "от батареек или сети"
+      "Форма излива": "не поворотный",
+      "Отверстие под смеситель": "1 отверстие",
+      "Донный клапан": "нет"
     }
   },
   {
     id: 9,
-    name: "Каскадный смеситель",
-    price: 8990,
+    name: "Dorsa Single-Lever Bath Mixer Chrome",
+    price: 1900,
     description: "Стильный каскадный смеситель, создающий эффект водопада. Станет ярким акцентом в любой ванной комнате.",
     category: "faucet",
-    imageUrl: "https://images.unsplash.com/photo-1584622781867-bc4ba9a27856?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    imageUrl: "/images/Dorsa Single-Lever Bath Mixer Chrome/photo_1_2025-03-07_13-16-22.jpg",
     images: [
-      "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1632292220916-e9c34dd75db2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      "/images/Dorsa Single-Lever Bath Mixer Chrome/photo_2_2025-03-07_13-16-22.jpg",
+      "/images/Dorsa Single-Lever Bath Mixer Chrome/photo_6_2025-03-07_13-16-22.jpg",
     ],
     features: [
-      "Эффект водопада",
-      "Широкий излив",
       "Однорычажное управление",
-      "Прочная конструкция"
+      "Современный дизайн",
+      "Высококачественная латунь",
     ],
     inStock: true,
     rating: 4.7,
@@ -366,60 +334,254 @@ export const products: Product[] = [
     material: "Латунь с хромированным покрытием",
     style: "Современный",
     specifications: {
-      "Назначение": "для раковины",
-      "Монтаж": "горизонтальный (на раковину)",
-      "Встраиваемый": "нет",
-      "Управление": "однорычажное",
+      "Назначение": "смеситель",
+      "Монтаж": "горизонтальный",
+      "Управление": "рычажное",
+      "Материал": "Латунь",
       "Цвет": "хром",
-      "Страна": "Германия",
+      "Страна": "Иран",
       "Гарантия": "5 лет",
-      "Подводка": "гибкая",
-      "Поворотный излив": "нет",
-      "Форма излива": "каскадный",
-      "Стилистика дизайна": "современный",
-      "Донный клапан": "в комплекте",
-      "Механизм": "керамический картридж",
-      "Материал корпуса": "латунь"
+      "Форма излива": "не поворотный",
+      "Отверстие под смеситель": "1 отверстие",
+      "Донный клапан": "нет"
     }
   },
   {
     id: 10,
-    name: "Настенный смеситель",
-    price: 6490,
+    name: "Dorsa Sink Mixer",
+    price: 1750,
     description: "Компактный настенный смеситель, экономящий пространство на раковине. Идеально подходит для небольших ванных комнат.",
     category: "faucet",
-    imageUrl: "https://images.unsplash.com/photo-1584622781867-bc4ba9a27856?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+    imageUrl: "/images/Dorsa Sink Mixer Chrome/photo_1_2025-03-07_12-34-12.jpg",
     images: [
-      "https://images.unsplash.com/photo-1584622781564-1d987f7333c1?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-      "https://images.unsplash.com/photo-1632292220916-e9c34dd75db2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+      "/images/Dorsa Sink Mixer Chrome/photo_2_2025-03-07_12-34-12.jpg",
+      "/images/Dorsa Sink Mixer Chrome/photo_6_2025-03-07_12-34-12.jpg"
     ],
     features: [
-      "Настенный монтаж",
-      "Экономия пространства",
-      "Регулируемая длина излива",
-      "Простая установка"
+      "Однорычажное управление",
+      "Современный дизайн",
+      "Высококачественная латунь",
     ],
-    inStock: false,
+    inStock: true,
     rating: 4.3,
     reviews: 56,
-    discount: 15,
     material: "Латунь с матовым покрытием",
-    style: "Минимализм",
+    style: "Современный",
     specifications: {
-      "Назначение": "для раковины",
-      "Монтаж": "вертикальный (на стену)",
-      "Встраиваемый": "нет",
-      "Управление": "однорычажное",
-      "Цвет": "матовый черный",
-      "Страна": "Италия",
+      "Назначение": "смеситель",
+      "Монтаж": "горизонтальный",
+      "Управление": "рычажное",
+      "Материал": "Латунь",
+      "Цвет": "хром",
+      "Страна": "Иран",
       "Гарантия": "5 лет",
-      "Подводка": "жесткая",
-      "Поворотный излив": "да",
-      "Форма излива": "прямой",
-      "Стилистика дизайна": "минимализм",
-      "Донный клапан": "приобретается отдельно",
-      "Механизм": "керамический картридж",
-      "Материал корпуса": "латунь"
+      "Форма излива": "поворотный",
+      "Отверстие под смеситель": "1 отверстие",
+      "Донный клапан": "нет"
+    }
+  },
+  {
+    id: 11,
+    name: "Sorena Bath Mixer",
+    price: 2770,
+    description: "Компактный настенный смеситель, экономящий пространство на раковине. Идеально подходит для небольших ванных комнат.",
+    category: "faucet",
+    imageUrl: "/images/Sorena Bath Mixer Chrome/photo_1_2025-03-07_14-31-17.jpg",
+    images: [
+      "/images/Sorena Bath Mixer Chrome/photo_5_2025-03-07_14-31-17.jpg",
+      "/images/Sorena Bath Mixer Chrome/photo_8_2025-03-07_14-31-17.jpg"
+    ],
+    features: [
+      "Однорычажное управление",
+      "Современный дизайн",
+      "Высококачественная латунь",
+    ],
+    inStock: true,
+    rating: 4.3,
+    reviews: 56,
+    material: "Латунь с матовым покрытием",
+    style: "Современный",
+    specifications: {
+      "Назначение": "смеситель",
+      "Монтаж": "вертикальный",
+      "Управление": "рычажное",
+      "Материал": "Латунь",
+      "Цвет": "хром",
+      "Страна": "Иран",
+      "Гарантия": "5 лет",
+      "Форма излива": "поворотный",
+      "Отверстие под смеситель": "1 отверстие",
+      "Донный клапан": "нет"
+    }
+  },
+  {
+    id: 12,
+    name: "Sorena single-lever sink mixer",
+    price: 3040,
+    description: "Компактный настенный смеситель, экономящий пространство на раковине. Идеально подходит для небольших ванных комнат.",
+    category: "faucet",
+    imageUrl: "/images/Sorena single level Sink Mixer Chrome/photo_1_2025-03-07_15-36-55.jpg",
+    images: [
+      "/images/Sorena single level Sink Mixer Chrome/photo_4_2025-03-07_15-36-55.jpg",
+      "/images/Sorena single level Sink Mixer Chrome/photo_11_2025-03-07_15-36-55.jpg"
+    ],
+    features: [
+      "Однорычажное управление",
+      "Современный дизайн",
+      "Высококачественная латунь",
+    ],
+    inStock: true,
+    rating: 4.3,
+    reviews: 56,
+    material: "Латунь с матовым покрытием",
+    style: "Современный",
+    specifications: {
+      "Назначение": "смеситель",
+      "Монтаж": "горизонтальный",
+      "Управление": "рычажное",
+      "Материал": "Латунь",
+      "Цвет": "хром",
+      "Страна": "Иран",
+      "Гарантия": "5 лет",
+      "Форма излива": "поворотный",
+      "Отверстие под смеситель": "1 отверстие",
+      "Донный клапан": "нет"
+    }
+  },
+  {
+    id: 13,
+    name: "Morvarid Single-Lever Bath Mixer Chrome",
+    price: 2259,
+    description: "Компактный настенный смеситель, экономящий пространство на раковине. Идеально подходит для небольших ванных комнат.",
+    category: "faucet",
+    imageUrl: "/images/Morvarid Single-Lever Bath Mixer Chrome/photo_2_2025-03-07_14-27-49.jpg",
+    images: [
+      "/images/Morvarid Single-Lever Bath Mixer Chrome/photo_4_2025-03-07_14-27-49.jpg",
+      "/images/Morvarid Single-Lever Bath Mixer Chrome/photo_8_2025-03-07_14-27-49.jpg"
+    ],
+    features: [
+      "Однорычажное управление",
+      "Современный дизайн",
+      "Высококачественная латунь",
+    ],
+    inStock: true,
+    rating: 4.3,
+    reviews: 56,
+    material: "Латунь с матовым покрытием",
+    style: "Современный",
+    specifications: {
+      "Назначение": "смеситель",
+      "Монтаж": "веертикальный",
+      "Управление": "рычажное",
+      "Материал": "Латунь",
+      "Цвет": "хром",
+      "Страна": "Иран",
+      "Гарантия": "5 лет",
+      "Форма излива": "поворотный",
+      "Отверстие под смеситель": "1 отверстие",
+      "Донный клапан": "нет"
+    }
+  },
+  {
+    id: 14,
+    name: "Papion Sink Mixer Chrome",
+    price: 3040,
+    description: "Компактный настенный смеситель, экономящий пространство на раковине. Идеально подходит для небольших ванных комнат.",
+    category: "faucet",
+    imageUrl: "/images/Papion Sink Mixer Chrome/photo_1_2025-03-07_16-46-46.jpg",
+    images: [
+      "/images/Papion Sink Mixer Chrome/photo_5_2025-03-07_16-46-46.jpg",
+      "/images/Papion Sink Mixer Chrome/photo_10_2025-03-07_16-46-46.jpg"
+    ],
+    features: [
+      "Однорычажное управление",
+      "Современный дизайн",
+      "Высококачественная латунь",
+    ],
+    inStock: true,
+    rating: 4.3,
+    reviews: 56,
+    material: "Латунь с матовым покрытием",
+    style: "Современный",
+    specifications: {
+      "Назначение": "смеситель",
+      "Монтаж": "горизонтальный",
+      "Управление": "рычажное",
+      "Материал": "Латунь",
+      "Цвет": "хром",
+      "Страна": "Иран",
+      "Гарантия": "5 лет",
+      "Форма излива": "поворотный",
+      "Отверстие под смеситель": "1 отверстие",
+      "Донный клапан": "нет"
+    }
+  },
+  {
+    id: 15,
+    name: "Papiyon Bath Mixer Chrome",
+    price: 2770,
+    description: "Компактный настенный смеситель, экономящий пространство на раковине. Идеально подходит для небольших ванных комнат.",
+    category: "faucet",
+    imageUrl: "/images/Papiyon Bath Mixer Chrome/photo_2_2025-03-07_11-09-37.jpg",
+    images: [
+      "/images/Papiyon Bath Mixer Chrome/photo_3_2025-03-07_11-09-37.jpg",
+      "/images/Papiyon Bath Mixer Chrome/photo_4_2025-03-07_11-09-37.jpg"
+    ],
+    features: [
+      "Однорычажное управление",
+      "Современный дизайн",
+      "Высококачественная латунь",
+    ],
+    inStock: true,
+    rating: 4.3,
+    reviews: 56,
+    material: "Латунь с матовым покрытием",
+    style: "Современный",
+    specifications: {
+      "Назначение": "смеситель",
+      "Монтаж": "вертикальный",
+      "Управление": "рычажное",
+      "Материал": "Латунь",
+      "Цвет": "хром",
+      "Страна": "Иран",
+      "Гарантия": "5 лет",
+      "Форма излива": "поворотный",
+      "Отверстие под смеситель": "1 отверстие",
+      "Донный клапан": "нет"
+    }
+  },
+  {
+    id: 16,
+    name: "Papiyon Single-Lever Basin Mixer",
+    price: 2500,
+    description: "Компактный настенный смеситель, экономящий пространство на раковине. Идеально подходит для небольших ванных комнат.",
+    category: "faucet",
+    imageUrl: "/images/Papiyon Single-Lever Basin Mixer/photo_1_2025-03-07_12-16-17.jpg",
+    images: [
+      "/images/Papiyon Single-Lever Basin Mixer/photo_3_2025-03-07_12-16-17.jpg",
+      "/images/Papiyon Single-Lever Basin Mixer/photo_6_2025-03-07_12-16-17.jpg"
+    ],
+    features: [
+      "Однорычажное управление",
+      "Современный дизайн",
+      "Высококачественная латунь",
+    ],
+    inStock: true,
+    rating: 4.3,
+    reviews: 56,
+    material: "Латунь с матовым покрытием",
+    style: "Современный",
+    specifications: {
+      "Назначение": "смеситель",
+      "Монтаж": "горизонтальный",
+      "Управление": "рычажное",
+      "Материал": "Латунь",
+      "Цвет": "хром",
+      "Страна": "Иран",
+      "Гарантия": "5 лет",
+      "Форма излива": "поворотный",
+      "Отверстие под смеситель": "1 отверстие",
+      "Донный клапан": "нет"
     }
   }
 ];

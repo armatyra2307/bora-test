@@ -1,94 +1,153 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Droplets, Mail, Phone, MapPin, Instagram, Facebook, Twitter } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, Shield, Truck, Droplets } from 'lucide-react';
+import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
+  const { t } = useTranslation();
+
   return (
-    <footer className="bg-gray-800 text-white">
-      <div className="container mx-auto px-4 py-10">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          {/* Company Info */}
-          <div>
-            <div className="flex items-center space-x-2 mb-4">
-              <Droplets className="h-8 w-8 text-blue-400" />
-              <span className="text-xl font-bold">Bora</span>
+    <footer className="bg-[#1a1a1a] text-gray-300">
+      <div className="container mx-auto px-3 py-6 sm:px-4 sm:py-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+          {/* Company */}
+          <div className="space-y-3 sm:space-y-4">
+            <div className="flex items-center space-x-2">
+              <Droplets className="h-8 w-8 text-blue-600" />
+              <h3 className="text-lg sm:text-xl font-bold text-white">Bora</h3>
             </div>
-            <p className="text-gray-300 mb-4">
-              Премиальные раковины и смесители для вашего дома. Качество, стиль и надежность.
+            <p className="text-xs sm:text-sm text-gray-400 leading-relaxed">
+              Premium plumbing fixtures for your home.
             </p>
-            <div className="flex space-x-4">
-              <a href="#" className="text-gray-300 hover:text-white">
-                <Instagram className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-gray-300 hover:text-white">
-                <Facebook className="h-5 w-5" />
-              </a>
-              <a href="#" className="text-gray-300 hover:text-white">
-                <Twitter className="h-5 w-5" />
-              </a>
-            </div>
           </div>
 
-          {/* Quick Links */}
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Быстрые ссылки</h3>
-            <ul className="space-y-2">
-              <li>
-                <Link to="/" className="text-gray-300 hover:text-white">Главная</Link>
+          {/* Contacts */}
+          <div className="space-y-3 sm:space-y-4">
+            <h3 className="text-base sm:text-lg font-semibold text-white">{t('contacts')}</h3>
+            <ul className="space-y-2 sm:space-y-3">
+              <li className="flex items-start group">
+                <div className="bg-white/5 p-1.5 sm:p-2 rounded-lg mr-2 sm:mr-3 group-hover:bg-white/10 transition-all duration-300">
+                  <Phone className="h-4 w-4 sm:h-5 sm:w-5 text-blue-400" />
+                </div>
+                <div>
+                  <p className="text-sm sm:text-base font-medium text-white">+7 (918) 555-61-86</p>
+                  <p className="text-xs text-gray-400 mt-0.5">Daily from 8:00 to 20:00</p>
+                </div>
               </li>
-              <li>
-                <Link to="/products/sinks" className="text-gray-300 hover:text-white">Раковины</Link>
+              <li className="flex items-start group">
+                <div className="bg-white/5 p-1.5 sm:p-2 rounded-lg mr-2 sm:mr-3 group-hover:bg-white/10 transition-all duration-300">
+                  <Mail className="h-4 w-4 sm:h-5 sm:w-5 text-blue-400" />
+                </div>
+                <div>
+                  <p className="text-sm sm:text-base font-medium text-white">ug_reg@mail.ru</p>
+                  <p className="text-xs text-gray-400 mt-0.5">We'll respond within an hour</p>
+                </div>
               </li>
-              <li>
-                <Link to="/products/faucets" className="text-gray-300 hover:text-white">Смесители</Link>
-              </li>
-              <li>
-                <Link to="/products" className="text-gray-300 hover:text-white">Все товары</Link>
+              <li className="hidden lg:flex items-start group">
+                <div className="bg-white/5 p-2 rounded-lg mr-3 group-hover:bg-white/10 transition-all duration-300">
+                  <MapPin className="h-5 w-5 text-blue-400" />
+                </div>
+                <div>
+                  <p className="text-base font-medium text-white">Rostov-on-Don, Example St., 123</p>
+                  <p className="text-xs text-gray-400 mt-0.5">On the map</p>
+                </div>
               </li>
             </ul>
           </div>
 
-          {/* Customer Service */}
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Обслуживание клиентов</h3>
-            <ul className="space-y-2">
+          {/* Menu */}
+          <div className="space-y-3 sm:space-y-4">
+            <h3 className="text-base sm:text-lg font-semibold text-white">{t('menu')}</h3>
+            <ul className="space-y-1.5 sm:space-y-2">
               <li>
-                <a href="#" className="text-gray-300 hover:text-white">Доставка и оплата</a>
+                <Link 
+                  to="/" 
+                  className="text-xs sm:text-sm text-gray-400 hover:text-white transition-colors flex items-center group"
+                >
+                  <span className="w-1 h-1 sm:w-1.5 sm:h-1.5 bg-blue-500 rounded-full mr-1.5 sm:mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                  {t('home')}
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white">Возврат и обмен</a>
+                <Link 
+                  to="/products" 
+                  className="text-xs sm:text-sm text-gray-400 hover:text-white transition-colors flex items-center group"
+                >
+                  <span className="w-1 h-1 sm:w-1.5 sm:h-1.5 bg-blue-500 rounded-full mr-1.5 sm:mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                  {t('catalog')}
+                </Link>
               </li>
               <li>
-                <a href="#" className="text-gray-300 hover:text-white">Гарантия</a>
+                <Link 
+                  to="/about" 
+                  className="text-xs sm:text-sm text-gray-400 hover:text-white transition-colors flex items-center group"
+                >
+                  <span className="w-1 h-1 sm:w-1.5 sm:h-1.5 bg-blue-500 rounded-full mr-1.5 sm:mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                  {t('aboutUs')}
+                </Link>
               </li>
-              <li>
-                <a href="#" className="text-gray-300 hover:text-white">Часто задаваемые вопросы</a>
+              <li className="hidden lg:block">
+                <Link 
+                  to="/delivery" 
+                  className="text-sm text-gray-400 hover:text-white transition-colors flex items-center group"
+                >
+                  <span className="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2 opacity-0 group-hover:opacity-100 transition-opacity"></span>
+                  {t('delivery')}
+                </Link>
               </li>
             </ul>
           </div>
 
-          {/* Contact Info */}
-          <div>
-            <h3 className="text-lg font-semibold mb-4">Контакты</h3>
+          {/* Information */}
+          <div className="hidden lg:block space-y-4">
+            <h3 className="text-lg font-semibold text-white">Information</h3>
             <ul className="space-y-3">
-              <li className="flex items-start space-x-3">
-                <MapPin className="h-5 w-5 text-blue-400 mt-0.5" />
-                <span className="text-gray-300">ул. Водопроводная, 123, Москва</span>
+              <li className="flex items-start group">
+                <div className="bg-white/5 p-2 rounded-lg mr-3 group-hover:bg-white/10 transition-all duration-300">
+                  <Truck className="h-5 w-5 text-blue-400" />
+                </div>
+                <div>
+                  <p className="text-base font-medium text-white">Free shipping</p>
+                  <p className="text-xs text-gray-400 mt-0.5">For orders over 5000 ₽</p>
+                </div>
               </li>
-              <li className="flex items-center space-x-3">
-                <Phone className="h-5 w-5 text-blue-400" />
-                <span className="text-gray-300">+7 (495) 123-45-67</span>
+              <li className="flex items-start group">
+                <div className="bg-white/5 p-2 rounded-lg mr-3 group-hover:bg-white/10 transition-all duration-300">
+                  <Shield className="h-5 w-5 text-blue-400" />
+                </div>
+                <div>
+                  <p className="text-base font-medium text-white">Quality guarantee</p>
+                  <p className="text-xs text-gray-400 mt-0.5">On all products</p>
+                </div>
               </li>
-              <li className="flex items-center space-x-3">
-                <Mail className="h-5 w-5 text-blue-400" />
-                <span className="text-gray-300">info@aquastyle.ru</span>
+              <li className="flex items-start group">
+                <div className="bg-white/5 p-2 rounded-lg mr-3 group-hover:bg-white/10 transition-all duration-300">
+                  <Clock className="h-5 w-5 text-blue-400" />
+                </div>
+                <div>
+                  <p className="text-base font-medium text-white">Fast delivery</p>
+                  <p className="text-xs text-gray-400 mt-0.5">1-3 business days</p>
+                </div>
               </li>
             </ul>
           </div>
         </div>
 
-        <div className="border-t border-gray-700 mt-10 pt-6 text-center text-gray-400">
-          <p>&copy; {new Date().getFullYear()} Bora. Все права защищены.</p>
+        {/* Footer bottom */}
+        <div className="border-t border-white/10 mt-6 sm:mt-8 pt-4 sm:pt-6">
+          <div className="flex flex-col sm:flex-row justify-between items-center">
+            <div className="text-xs sm:text-sm text-gray-400">
+              © 2024 Bora. {t('allRightsReserved')}
+            </div>
+            <div className="flex space-x-4 sm:space-x-6 mt-3 sm:mt-0">
+              <Link to="" className="text-xs sm:text-sm text-gray-400 hover:text-white transition-colors">
+                {t('privacyPolicy')}
+              </Link>
+              <Link to="" className="text-xs sm:text-sm text-gray-400 hover:text-white transition-colors">
+                {t('termsOfUse')}
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </footer>

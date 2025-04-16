@@ -4,8 +4,10 @@ import { Trash2, ArrowLeft, ShoppingBag, AlertCircle } from 'lucide-react';
 import { useCart } from '../context/CartContext';
 import OrderModal from '../components/OrderModal';
 import { sendOrderEmail } from '../services/emailService';
+import { useTranslation } from 'react-i18next';
 
 const CartPage = () => {
+  const { t } = useTranslation();
   const { cart, removeFromCart, updateQuantity, totalPrice, clearCart } = useCart();
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -14,7 +16,7 @@ const CartPage = () => {
   const handleOrderSubmit = async (orderData: any) => {
     setIsSubmitting(true);
     try {
-      console.log('Отправка заказа:', orderData);
+      console.log('Sending order:', orderData);
       const success = await sendOrderEmail({
         ...orderData,
         totalPrice,
@@ -33,11 +35,11 @@ const CartPage = () => {
           setSubmitStatus(null);
         }, 2000);
       } else {
-        console.error('Ошибка при отправке заказа');
+        console.error('Error sending order');
         setSubmitStatus('error');
       }
     } catch (error) {
-      console.error('Ошибка при обработке заказа:', error);
+      console.error('Error processing order:', error);
       setSubmitStatus('error');
     } finally {
       setIsSubmitting(false);
@@ -50,16 +52,16 @@ const CartPage = () => {
         <div className="max-w-md mx-auto">
           <ShoppingBag className="h-16 w-16 text-gray-400 mx-auto mb-4" />
           <h2 className="text-2xl font-semibold text-gray-700 mb-4">
-            Ваша корзина пуста
+            {t('emptyCart')}
           </h2>
           <p className="text-gray-500 mb-8">
-            Похоже, вы еще не добавили товары в корзину. Начните с просмотра наших товаров.
+            It seems you haven't added any products to your cart yet. Start by browsing our products.
           </p>
           <Link 
             to="/products" 
             className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg transition-colors"
           >
-            Перейти к покупкам
+            {t('continueShopping')}
           </Link>
         </div>
       </div>
@@ -68,15 +70,14 @@ const CartPage = () => {
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <h1 className="text-3xl font-bold text-gray-800 mb-6">Корзина</h1>
+      <h1 className="text-3xl font-bold text-gray-800 mb-6">{t('yourCart')}</h1>
       
-      {/* Back button */}
       <Link 
         to="/products" 
         className="inline-flex items-center text-gray-600 hover:text-blue-600 mb-8"
       >
         <ArrowLeft className="mr-2 h-5 w-5" />
-        Продолжить покупки
+        {t('continueShopping')}
       </Link>
       
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -85,13 +86,12 @@ const CartPage = () => {
           <div className="bg-white rounded-lg shadow-md overflow-hidden">
             <div className="p-6 border-b border-gray-200">
               <h2 className="text-xl font-semibold text-gray-800">
-                Товары в корзине ({cart.length})
+                {t('itemsInCart')} ({cart.length})
               </h2>
             </div>
             
             <ul className="divide-y divide-gray-200">
               {cart.map((item) => {
-                // Calculate discounted price if applicable
                 const finalPrice = item.product.discount 
                   ? item.product.price * (1 - item.product.discount / 100) 
                   : item.product.price;
@@ -118,7 +118,7 @@ const CartPage = () => {
                               {item.product.name}
                             </h3>
                             <p className="text-sm text-gray-500 mb-3">
-                              {item.product.category === 'sink' ? 'Раковина' : 'Смеситель'}
+                              {item.product.category === 'sink' ? t('sinks') : t('faucets')}
                             </p>
                           </div>
                           
@@ -128,7 +128,7 @@ const CartPage = () => {
                               <button 
                                 onClick={() => updateQuantity(item.product.id, item.quantity - 1)}
                                 className="px-3 py-1 text-gray-600 hover:text-gray-800"
-                                aria-label="Уменьшить количество"
+                                aria-label={t('decreaseQuantity')}
                               >
                                 -
                               </button>
@@ -138,7 +138,7 @@ const CartPage = () => {
                               <button 
                                 onClick={() => updateQuantity(item.product.id, item.quantity + 1)}
                                 className="px-3 py-1 text-gray-600 hover:text-gray-800"
-                                aria-label="Увеличить количество"
+                                aria-label={t('increaseQuantity')}
                               >
                                 +
                               </button>
@@ -148,7 +148,7 @@ const CartPage = () => {
                             <button 
                               onClick={() => removeFromCart(item.product.id)}
                               className="ml-4 text-gray-400 hover:text-red-500"
-                              aria-label="Удалить товар"
+                              aria-label={t('removeItem')}
                             >
                               <Trash2 className="h-5 w-5" />
                             </button>
@@ -175,7 +175,7 @@ const CartPage = () => {
                           </div>
                           
                           <div className="text-right">
-                            <span className="text-gray-600">Итого:</span>
+                            <span className="text-gray-600">{t('total')}:</span>
                             <span className="ml-2 text-lg font-bold text-gray-800">
                               {itemTotal.toLocaleString()} ₽
                             </span>
@@ -194,24 +194,24 @@ const CartPage = () => {
         <div className="lg:col-span-1">
           <div className="bg-white rounded-lg shadow-md p-6 sticky top-6">
             <h2 className="text-xl font-semibold text-gray-800 mb-6">
-              Сводка заказа
+              {t('orderSummary')}
             </h2>
             
             <div className="space-y-4 mb-6">
               <div className="flex justify-between">
-                <span className="text-gray-600">Товары ({cart.length})</span>
+                <span className="text-gray-600">{t('items')} ({cart.length})</span>
                 <span className="text-gray-800 font-medium">
                   {totalPrice.toLocaleString()} ₽
                 </span>
               </div>
               <div className="flex justify-between">
-                <span className="text-gray-600">Доставка</span>
+                <span className="text-gray-600">{t('shipping')}</span>
                 <span className="text-gray-800 font-medium">
-                  {totalPrice >= 5000 ? 'Бесплатно' : '500 ₽'}
+                  {totalPrice >= 5000 ? t('free') : '500 ₽'}
                 </span>
               </div>
               <div className="border-t border-gray-200 pt-4 flex justify-between">
-                <span className="text-gray-800 font-semibold">Итого</span>
+                <span className="text-gray-800 font-semibold">{t('total')}</span>
                 <span className="text-xl text-gray-800 font-bold">
                   {(totalPrice + (totalPrice >= 5000 ? 0 : 500)).toLocaleString()} ₽
                 </span>
@@ -221,17 +221,17 @@ const CartPage = () => {
             {/* Promo code */}
             <div className="mb-6">
               <label htmlFor="promo" className="block text-sm font-medium text-gray-700 mb-2">
-                Промокод
+                {t('promoCode')}
               </label>
               <div className="flex">
                 <input
                   type="text"
                   id="promo"
                   className="flex-grow border border-gray-300 rounded-l-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                  placeholder="Введите промокод"
+                  placeholder={t('enterPromoCode')}
                 />
                 <button className="bg-gray-200 hover:bg-gray-300 text-gray-800 font-medium px-4 py-2 rounded-r-lg transition-colors">
-                  Применить
+                  {t('apply')}
                 </button>
               </div>
             </div>
@@ -241,13 +241,13 @@ const CartPage = () => {
               onClick={() => setIsModalOpen(true)}
               className="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg transition-colors mb-4"
             >
-              Оформить заказ
+              {t('checkout')}
             </button>
             
             {/* Secure checkout notice */}
             <div className="flex items-center justify-center text-sm text-gray-500">
               <AlertCircle className="h-4 w-4 mr-2" />
-              <span>Безопасная оплата</span>
+              <span>{t('securePayment')}</span>
             </div>
           </div>
         </div>
@@ -264,12 +264,12 @@ const CartPage = () => {
       {/* Submit Status Messages */}
       {submitStatus === 'success' && (
         <div className="fixed bottom-4 right-4 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg">
-          Заказ успешно отправлен!
+          {t('orderSuccess')}
         </div>
       )}
       {submitStatus === 'error' && (
         <div className="fixed bottom-4 right-4 bg-red-500 text-white px-6 py-3 rounded-lg shadow-lg">
-          Произошла ошибка при отправке заказа. Пожалуйста, попробуйте позже.
+          {t('orderError')}
         </div>
       )}
     </div>

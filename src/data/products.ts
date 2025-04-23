@@ -134,7 +134,7 @@ export const products: Product[] = [
     images: [
       "/images/Garnet/Garnet Sink Black Rosegold Rassan.jpg",
       "/images/Garnet/Garnet Sink Chrome Rassan.jpg",
-      "i/images/Garnet/Garnet Sink Gold Rassan.jpg"
+      "/images/Garnet/Garnet Sink Gold Rassan.jpg"
     ],
     features: [
       "Искусственный камень премиум-класса",
@@ -623,9 +623,9 @@ export const products: Product[] = [
     price: 1659,
     description: "Компактный настенный смеситель, экономящий пространство на раковине. Идеально подходит для небольших ванных комнат.",
     category: "faucet",
-    imageUrl: "/public/images/Morvarid BasinMixer Chrome/photo_3_2025-03-10_13-27-33.jpg",
+    imageUrl: "/images/Morvarid BasinMixer Chrome/photo_3_2025-03-10_13-27-33.jpg",
     images: [
-      "/public/images/Morvarid BasinMixer Chrome/photo_8_2025-03-10_13-27-33.jpg"
+      "/images/Morvarid BasinMixer Chrome/photo_8_2025-03-10_13-27-33.jpg"
     ],
     features: [
       "Однорычажное управление",
@@ -656,9 +656,9 @@ export const products: Product[] = [
     price: 1980,
     description: "Компактный настенный смеситель, экономящий пространство на раковине. Идеально подходит для небольших ванных комнат.",
     category: "faucet",
-    imageUrl: "/public/images/Morvarid Single-Lever Sink Mixer Chrome/photo_1_2025-03-10_13-34-12.jpg",
+    imageUrl: "/images/Morvarid Single-Lever Sink Mixer Chrome/photo_1_2025-03-10_13-34-12.jpg",
     images: [
-      "public/images/Morvarid Single-Lever Sink Mixer Chrome/photo_8_2025-03-10_13-34-12.jpg"
+      "/images/Morvarid Single-Lever Sink Mixer Chrome/photo_8_2025-03-10_13-34-12.jpg"
     ],
     features: [
       "Однорычажное управление",
@@ -689,9 +689,9 @@ export const products: Product[] = [
     price: 3620,
     description: "Компактный настенный смеситель, экономящий пространство на раковине. Идеально подходит для небольших ванных комнат.",
     category: "faucet",
-    imageUrl: "/public/images/Lotus Bath Mixer Golden Black/photo_2_2025-03-10_13-21-51.jpg",
+    imageUrl: "/images/Lotus Bath Mixer Golden Black/photo_2_2025-03-10_13-21-51.jpg",
     images: [
-      "/public/images/Lotus Bath Mixer Golden Black/photo_7_2025-03-10_13-21-51.jpg"
+      "/images/Lotus Bath Mixer Golden Black/photo_7_2025-03-10_13-21-51.jpg"
     ],
     features: [
       "Однорычажное управление",
@@ -722,9 +722,9 @@ export const products: Product[] = [
     price: 2199,
     description: "Компактный настенный смеситель, экономящий пространство на раковине. Идеально подходит для небольших ванных комнат.",
     category: "faucet",
-    imageUrl: "/public/images/Lotus Basin Mixer Golden Black/photo_4_2025-03-07_12-04-56.jpg",
+    imageUrl: "/images/Lotus Basin Mixer Golden Black/photo_4_2025-03-07_12-04-56.jpg",
     images: [
-      "/public/images/Lotus Basin Mixer Golden Black/photo_7_2025-03-07_12-04-56.jpg"
+      "/images/Lotus Basin Mixer Golden Black/photo_7_2025-03-07_12-04-56.jpg"
     ],
     features: [
       "Однорычажное управление",
@@ -755,9 +755,9 @@ export const products: Product[] = [
     price: 3600,
     description: "Компактный настенный смеситель, экономящий пространство на раковине. Идеально подходит для небольших ванных комнат.",
     category: "faucet",
-    imageUrl: "/public/images/Lotus Sink Mixer Golden Black/photo_5_2025-03-07_15-00-47.jpg",
+    imageUrl: "/images/Lotus Sink Mixer Golden Black/photo_5_2025-03-07_15-00-47.jpg",
     images: [
-      "/public/images/Lotus Sink Mixer Golden Black/photo_2_2025-03-07_15-00-47.jpg"
+      "/images/Lotus Sink Mixer Golden Black/photo_2_2025-03-07_15-00-47.jpg"
     ],
     features: [
       "Однорычажное управление",
@@ -788,10 +788,10 @@ export const products: Product[] = [
     price: 4000,
     description: "Компактный настенный смеситель, экономящий пространство на раковине. Идеально подходит для небольших ванных комнат.",
     category: "faucet",
-    imageUrl: "/public/images/Lian Water Refied Sink Mixer Chome Milky/Lian Sink Black Rassan.jpg",
+    imageUrl: "/images/Lian Water Refied Sink Mixer Chrome Milky/Lian Sink Black Rassan.jpg",
     images: [
-      "/public/images/Lian Water Refied Sink Mixer Chome Milky/Lian Sink Gold Rassan.jpg",
-      "/public/images/Lian Water Refied Sink Mixer Chome Milky/Lian Sink White Rassan.jpg"
+      "/images/Lian Water Refied Sink Mixer Chrome Milky/Lian Sink Gold Rassan.jpg",
+      "/images/Lian Water Refied Sink Mixer Chrome Milky/Lian Sink White Rassan.jpg"
     ],
     features: [
       "Однорычажное управление",
@@ -822,10 +822,10 @@ export const products: Product[] = [
     price: 5000,
     description: "Компактный настенный смеситель, экономящий пространство на раковине. Идеально подходит для небольших ванных комнат.",
     category: "faucet",
-    imageUrl: "/public/images/Sarina Sink Mixer With Extractable Chrome Matte/photo_3_2025-03-07_13-05-49.jpg",
+    imageUrl: "/images/Sarina Sink Mixer With Extractable Chrome Matte/photo_3_2025-03-07_13-05-49.jpg",
     images: [
-      "/public/images/Sarina SinkMixer With Extractable Chrome/photo_2_2025-03-07_15-56-08.jpg",
-      "/public/images/Sarina Sink Mixer With Extractable Chrome Matte/photo_7_2025-03-07_13-05-49.jpg"
+      "/images/Sarina SinkMixer With Extractable Chrome/photo_2_2025-03-07_15-56-08.jpg",
+      "/images/Sarina Sink Mixer With Extractable Chrome Matte/photo_7_2025-03-07_13-05-49.jpg"
     ],
     features: [
       "Однорычажное управление",
@@ -856,9 +856,9 @@ export const products: Product[] = [
     price: 3978,
     description: "Компактный настенный смеситель, экономящий пространство на раковине. Идеально подходит для небольших ванных комнат.",
     category: "faucet",
-    imageUrl: "/public/images/Baran Flat Sink Mixer Chrome/photo_3_2025-03-10_12-19-16.jpg",
+    imageUrl: "/images/Baran Flat Sink Mixer Chrome/photo_3_2025-03-10_12-19-16.jpg",
     images: [
-      "public/images/Baran Flat Sink Mixer Chrome/photo_11_2025-03-10_12-19-16.jpg"
+      "/images/Baran Flat Sink Mixer Chrome/photo_11_2025-03-10_12-19-16.jpg"
     ],
     features: [
       "Однорычажное управление",
@@ -889,9 +889,9 @@ export const products: Product[] = [
     price: 2700,
     description: "Компактный настенный смеситель, экономящий пространство на раковине. Идеально подходит для небольших ванных комнат.",
     category: "faucet",
-    imageUrl: "/public/images/Shabnam Single-lever Sink Mixer Black/photo_10_2025-03-07_14-47-22.jpg",
+    imageUrl: "/images/Shabnam Single-lever Sink Mixer Black/photo_10_2025-03-07_14-47-22.jpg",
     images: [
-      "/public/images/Shabnam Single-lever Sink Mixer Black/photo_5_2025-03-07_14-47-22.jpg"
+      "/images/Shabnam Single-lever Sink Mixer Black/photo_5_2025-03-07_14-47-22.jpg"
     ],
     features: [
       "Однорычажное управление",
@@ -922,9 +922,9 @@ export const products: Product[] = [
     price: 7420,
     description: "Компактный настенный смеситель, экономящий пространство на раковине. Идеально подходит для небольших ванных комнат.",
     category: "faucet",
-    imageUrl: "/public/images/Tiara Basin Mixer Electronic smart Chrome/photo_11_2025-03-07_15-17-23.jpg",
+    imageUrl: "/images/Tiara Basin Mixer Electronic smart Chrome/photo_11_2025-03-07_15-17-23.jpg",
     images: [
-      "/public/images/Tiara Basin Mixer Electronic smart Chrome/photo_2_2025-03-07_15-17-23.jpg"
+      "/images/Tiara Basin Mixer Electronic smart Chrome/photo_2_2025-03-07_15-17-23.jpg"
     ],
     features: [
       "Однорычажное управление",

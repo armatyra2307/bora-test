@@ -583,7 +583,7 @@ export const products: Product[] = [
       "Отверстие под смеситель": "1 отверстие",
       "Донный клапан": "нет"
     }
-  }
+  },
 ];
 
 export const getProductsByCategory = (category: 'sink' | 'faucet' | 'all') => {

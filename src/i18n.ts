@@ -110,6 +110,8 @@ const resources = {
       subscribePlaceholder: 'Enter your email',
       subscribeButton: 'Subscribe',
       socialMedia: 'Follow us',
+      onMap: 'On the map',
+      withinAnHour: 'We will respond within an hour',
 
       // HomePage
       viewAll: 'View All',
@@ -233,6 +235,8 @@ const resources = {
       subscribePlaceholder: 'Введите ваш email',
       subscribeButton: 'Подписаться',
       socialMedia: 'Мы в соцсетях',
+      onMap: 'На карте',
+      withinAnHour: 'Ответим в течение часа',
 
       // HomePage
       viewAll: 'Смотреть все',

@@ -40,7 +40,7 @@ const Footer = () => {
                 </div>
                 <div>
                   <p className="text-sm sm:text-base font-medium text-white">ug_reg@mail.ru</p>
-                  <p className="text-xs text-gray-400 mt-0.5">We'll respond within an hour</p>
+                  <p className="text-xs text-gray-400 mt-0.5">{t('withinAnHour')}</p>
                 </div>
               </li>
               <li className="hidden lg:flex items-start group">
@@ -48,8 +48,8 @@ const Footer = () => {
                   <MapPin className="h-5 w-5 text-blue-400" />
                 </div>
                 <div>
-                  <p className="text-base font-medium text-white">Rostov-on-Don, Example St., 123</p>
-                  <p className="text-xs text-gray-400 mt-0.5">On the map</p>
+                  <p className="text-base font-medium text-white">г. Ростов-на-Дону, ул. Примерная, 123</p>
+                  <p className="text-xs text-gray-400 mt-0.5">На карточку </p>
                 </div>
               </li>
             </ul>

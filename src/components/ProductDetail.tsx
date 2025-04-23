@@ -180,12 +180,12 @@ const ProductDetail: React.FC = () => {
             <div className="p-3 sm:p-4 border-b border-gray-200">
               <h3 className="text-base sm:text-lg font-semibold text-gray-800">
                 {t('specifications')} {product.name}
-              </h3>
+            </h3>
             </div>
             
             <div className="p-3 sm:p-4">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-2 sm:gap-3 lg:gap-6">
-                {/* Left column */}
+              {/* Left column */}
                 <div className="space-y-1.5 sm:space-y-2">
                   {leftSpecs.slice(0, isSpecsExpanded ? undefined : 2).map(([key, value]) => (
                     <div 
@@ -197,11 +197,11 @@ const ProductDetail: React.FC = () => {
                       </span>
                       <span className="text-gray-600 text-xs sm:text-sm lg:text-base break-words">
                         {typeof value === 'boolean' ? (value ? 'Yes' : 'No') : value.toString()}
-                      </span>
-                    </div>
-                  ))}
-                </div>
-                {/* Right column */}
+                    </span>
+                  </div>
+                ))}
+              </div>
+              {/* Right column */}
                 <div className="space-y-1.5 sm:space-y-2">
                   {rightSpecs.slice(0, isSpecsExpanded ? undefined : 2).map(([key, value]) => (
                     <div 
@@ -213,11 +213,11 @@ const ProductDetail: React.FC = () => {
                       </span>
                       <span className="text-gray-600 text-xs sm:text-sm lg:text-base break-words">
                         {typeof value === 'boolean' ? (value ? 'Yes' : 'No') : value.toString()}
-                      </span>
-                    </div>
-                  ))}
-                </div>
+                    </span>
+                  </div>
+                ))}
               </div>
+            </div>
             </div>
 
             {specEntries.length > 4 && (

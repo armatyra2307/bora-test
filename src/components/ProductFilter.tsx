@@ -39,12 +39,12 @@ const ProductFilter: React.FC<ProductFilterProps> = ({ onFilterChange }) => {
     <div className="bg-white rounded-lg shadow-md p-4">
       <div className="flex justify-between items-center mb-4">
         <h3 className="text-lg font-semibold">{t('filters')}</h3>
-        <button
+          <button 
           onClick={resetFilters}
-          className="text-sm text-blue-600 hover:text-blue-800"
-        >
+            className="text-sm text-blue-600 hover:text-blue-800"
+          >
           {t('resetAll')}
-        </button>
+          </button>
       </div>
 
       {/* Material Filter */}
@@ -71,17 +71,17 @@ const ProductFilter: React.FC<ProductFilterProps> = ({ onFilterChange }) => {
         <div className="space-y-2">
           {['modern', 'classic', 'minimalist', 'retro', 'loft'].map((style) => (
             <label key={style} className="flex items-center">
-              <input
-                type="checkbox"
+                      <input
+                        type="checkbox"
                 checked={filters.style.includes(style)}
                 onChange={() => handleFilterChange('style', style)}
                 className="mr-2"
               />
               {t(style)}
-            </label>
+                      </label>
           ))}
-        </div>
-      </div>
+                    </div>
+              </div>
 
       {/* Price Filter */}
       <div className="mb-4">
@@ -98,7 +98,7 @@ const ProductFilter: React.FC<ProductFilterProps> = ({ onFilterChange }) => {
               {t(price)}
             </label>
           ))}
-        </div>
+          </div>
       </div>
     </div>
   );
